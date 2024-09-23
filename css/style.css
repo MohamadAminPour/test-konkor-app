@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/isans.eot') format('eot'),
+        url('../fonts/vazir.ttf') format('truetype'),
+        url('../fonts/vazir.woff') format('woff'),
+        url('../fonts/vazir.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'vazir';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Intro {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 99999999999;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%, -50%);
+    transition: all 1s ease;
+    transition-duration: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Intro_Container {
+    position: absolute;
+    width: 85%;
+    height: 80%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.IntroTitle {
+    position: absolute;
+    top: 0%;
+    font-size: 20px;
+    width: 100%;
+    height: 20%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.questions {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px;
+}
+
+.questions li {
+    width: 200px;
+    height: 200px;
+    background-color: #cb5bec;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.questions li:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .2);
+}

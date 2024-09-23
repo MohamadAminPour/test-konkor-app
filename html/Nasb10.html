@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/listen.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="MsgBox">
+        <p>مطمئنی میخوای تموم کنی این بازی کثیفو؟</p>
+        <div>
+            <button id="yes">بله</button>
+            <button id="no">خیر</button>
+        </div>
+    </div>
+
+    <div class="MsgEnd">
+        <p>سوالا تموم شد حالا ببینیم چه کردی :)</p>
+        <div>
+            <button id="SeeReport">کارناممو میخوام</button>
+            <button id="DontSee">خراب کردم میخوام برم تو افق محو شم</button>
+        </div>
+    </div>
+
+    <div class="real">
+
+        <div class="report">
+
+            <div class="status">
+                <p id="status"></p>
+            </div>
+    
+            <div class="allQuestions">
+                <p>تعداد سوالات : <span id="QuestionCount"></span></p>
+                <p>تعداد پاسخ درست : <span id="TrueQuestion"></span></p>
+                <p>تعداد پاسخ غلط : <span id="FalseQuestion"></span></p>
+                <p>تعداد سوالات بی جواب : <span id="EmptyQuestion"></span></p>
+            </div>
+    
+            <div class="Time">
+    
+                <div class="EndTime">
+                    <p>زمان شما : </p>
+                </div>
+    
+                <div class="TimeNumber">
+                    <p id="ReportSecond">00</p>
+                    <span>:</span>
+                    <p id="ReportMinute">00</p>
+                </div>
+    
+            </div>
+    
+            <div class="Back">
+                <button id="Exit">خروج</button>
+            </div>
+    
+        </div>
+    
+    
+        <div class="Intro">
+            <div class="IntroListenTitle">
+                <h3>خب خب اگه آماده ای بیا شروع کنیم</h3>
+                <h4>برای شروع میتونی دکمه پایین رو بزنی و به تست ها جواب بدی در اخر هم با زدن گزینه دریافت کارنامه میتونی
+                    نمرات درخشانت رو نگاه کنی <span>:)</span></h4>
+            </div>
+    
+            <div class="IntriBtn">
+                <button id="StartQuiz">شروع</button>
+            </div>
+        </div>
+    
+        <div class="TabBar">
+            <div class="TabBar_Containeer">
+    
+                <!-- <div class="darkMood">
+                    <div>
+                        <i id="theme" class='bx bx-sun'></i>
+                    </div>
+                </div> -->
+    
+                <div class="timer">
+                    <p id="second">00</p>
+                    <span>:</span>
+                    <p id="minute">00</p>
+                </div>
+    
+                <div class="GetReport">
+    
+                    <svg width="25" height="25" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                            <path
+                                d="M5 7a3 3 0 0 1 3-3h24a3 3 0 0 1 3 3v37H8a3 3 0 0 1-3-3V7Zm30 17a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v17a3 3 0 0 1-3 3h-5V24Z" />
+                            <path stroke-linecap="round" d="M11 12h8m-8 7h12" />
+                        </g>
+                    </svg>
+                    <p>دریافت کارنامه</p>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="box">
+    
+            <div class="title">
+                <h3 class="ListenName"></h3>
+            </div>
+    
+            <div class="quiz">
+                <div>
+                    <button id="next"><i class='bx bx-chevron-right'></i></button>
+                    <p class="QuizTxt"></p>
+                    <button id="prev"><i class='bx bx-chevron-left'></i></button>
+                </div>
+            </div>
+    
+            <ul class="anwser">
+                <li class="anwsers anwser1"></li>
+                <li class="anwsers anwser2"></li>
+                <li class="anwsers anwser3"></li>
+                <li class="anwsers anwser4"></li>
+            </ul>
+    
+        </div>
+
+    </div>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
